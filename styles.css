@@ -1,145 +1,147 @@
 footer {
-    background-color: #6C3AD6; /* cor roxa igual da imagem */
-    color: white;
-    padding: 40px 0;
-    font-family: Arial, sans-serif;
-    }
-    
-    .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1100px;
-    margin: 0 auto;
-    }
-    
-    .footer-logo {
-    flex: 1;
-    text-align: left;
-    }
-    
-    .footer-logo h2 {
-    font-size: 28px;
-    margin: 0;
-    }
-    
-    .footer-logo p {
-    font-size: 22px;
-    margin-top: 5px;
-    }
-    
-    .footer-links,
-    .footer-social {
-    flex: 1;
-    }
-    
-    .footer-links h3,
-    .footer-social h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    }
-    
-    .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    }
-    
-    .footer-links ul li {
-    margin-bottom: 8px;
-    }
-    
-    .footer-links ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    }
-    
-    .footer-links ul li a:hover {
-    text-decoration: underline;
-    }
-    
-    .footer-social p {
-    margin: 8px 0;
-    font-size: 16px;
-    }
-    
-    .icon {
-    width: 22px;
-    vertical-align: middle;
-    margin-right: 10px;
-    }
-    /* Estilos para  navbar */
-    .navbar-nav .nav-link {
-        color: #fff !important; 
-    }
+  background-color: #6C3AD6;
+  /* cor roxa igual da imagem */
+  color: white;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
 
-    
-    .navbar-nav .nav-link:hover {
-        color: rgb(215, 60, 190) !important; 
-    }
- 
-    .navbar-brand,
-    .navbar-toggler-icon {
-      filter: invert(1); 
-    }
-    
-    section{
-        background-color: black !important;
-    }
-    h3{
-        color: white !important;
-    }
-    .roxo{
-        color: #6C3AD6 !important;
-    }
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
-    .conhece-btn {
-      background-color: #d63384;
-      color: white;
-      font-weight: bold;
-      padding: 10px 20px;
-      border-radius: 25px;
-      transition: 0.3s;
-    }
+.footer-logo {
+  flex: 1;
+  text-align: left;
+}
 
-    .conhece-btn:hover {
-      background-color: #6C3AD6;
-      transform: scale(1.05);
-    }
+.footer-logo h2 {
+  font-size: 28px;
+  margin: 0;
+}
 
-    .text-container {
-      max-width: 400px;
-    }
+.footer-logo p {
+  font-size: 22px;
+  margin-top: 5px;
+}
 
-    .carousel-item .d-md-flex {
-      justify-content: center;
-      gap: 30px;
-    }
+.footer-links,
+.footer-social {
+  flex: 1;
+}
 
-    .carousel-item img {
-      width: 380px;
-      height: 250px;
-      object-fit: cover;
-    }
+.footer-links h3,
+.footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
-    .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.5 0L4.09 1.41 6.67 4 4.09 6.59 5.5 8l4-4-4-4z'/%3E%3C/svg%3E");
-  background-size: 60% 60%;
-  background-color: #fff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.icon {
+  width: 22px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Estilos para  navbar */
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+
+.navbar-nav .nav-link:hover {
+  color: rgb(215, 60, 190) !important;
+}
+
+.navbar-brand,
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+section {
+  background-color: black !important;
+}
+
+h3 {
+  color: white !important;
+}
+
+.roxo {
+  color: #6C3AD6 !important;
+}
+
+.conhece-btn {
+  background-color: #d63384 !important;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 10px 20px !important;
+  border-radius: 25px !important;
+  transition: 0.3s !important;
+}
+
+.conhece-btn:hover {
+  background-color: #6C3AD6 !important;
+  transform: scale(1.05) !important;
+}
+
+.text-container {
+  max-width: 400px;
+}
+
+.carousel-item .d-md-flex {
+  justify-content: center;
+  gap: 30px;
+}
+
+.carousel-item img {
+  width: 380px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  width: 60px;
+  height: 60px;
+}
+
+.carousel-control-prev-icon {
+  background: url("img/SETA.png") no-repeat center;
+  background-size: contain;
+  transform: rotate(0deg);
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.5 0L1.09 1.41 3.67 4 1.09 6.59 2.5 8l4-4-4-4z'/%3E%3C/svg%3E");
-  background-size: 60% 60%;
-  background-color: #fff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  background: url("img/SETA.png") no-repeat center;
+  background-size: contain;
+  transform: rotate(180deg);
 }
-s
-  
-    

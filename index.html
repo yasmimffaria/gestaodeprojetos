@@ -1,36 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <title>NEXT DEV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <title>NEXT DEV</title>
+
+  <style>
+    /* Cor roxa personalizada */
+    .roxo {
+      color: #a020f0;
+    }
+
+    /* Botão Conheça destacado */
+    .conhece-btn {
+      background-color: #d63384;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .conhece-btn:hover {
+      background-color: #a020f0;
+      transform: scale(1.05);
+    }
+
+    /* Ajuste do texto */
+    .text-container {
+      max-width: 400px;
+    }
+
+    /* Centralizar imagem + texto */
+    .carousel-item .d-md-flex {
+      justify-content: center;
+      gap: 30px;
+    }
+
+    /* Ajuste de imagem */
+    .carousel-item img {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    /* Setas do carrossel */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-size: 60% 60%;
+    }
+  </style>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">NEXT DEV</></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Nossos Serviços</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Equipe</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Depoimentos</a>
-        </li>
-      </ul>
+
+<body style="background-color: black;">
+  <nav class="navbar bg-dark navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">NEXT DEV&lt;/&gt;</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Inicio |</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Nossos Serviços |</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#sec-professor">Equipe |</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Depoimentos |</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
+  <section id="sec-professor" class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="roxo">Professores</h4>
+          <h3>Equipe especializada para atender você</h3>
+        </div>
+        <div class="col-12">
+          <div id="professoresCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-md-flex flex-md-row align-items-md-center text-white">
+                  <div class="me-md-4 mb-3 mb-md-0">
+                    <img
+                      src="https://valentereispessali.com.br/wp-content/uploads/2023/04/Como-funciona-o-periodo-de-intersticio-para-professor-substituto.png.webp"
+                      class="img-fluid rounded" alt="Professor 1">
+                  </div>
+                  <div class="text-container">
+                    <h5 class="card-title fw-bold">Jose Carlos</h5>
+                    <p class="card-text text-secondary">A decade of experience in front-end development, specializing in
+                      React and Vue.js. He is passionate about creating intuitive user interfaces and clean code.</p>
+                    <button class="btn conhece-btn mt-3">Conheça</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-md-flex flex-md-row align-items-md-center text-white">
+                  <div class="me-md-4 mb-3 mb-md-0">
+                    <img src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2018/01/professora.jpg?quality=70&strip=info&w=1280&h=720&crop=1"
+                      class="img-fluid rounded" alt="Professor 2">
+                  </div>
+                  <div class="text-container">
+                    <h5 class="card-title fw-bold">Ana Maria</h5>
+                    <p class="card-text text-secondary">Expert in back-end technologies such as Node.js and Python. She
+                      leads our DevOps initiatives, ensuring our applications are scalable and secure.</p>
+                    <button class="btn conhece-btn mt-3">Conheça</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#professoresCarousel"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#professoresCarousel"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-5">
+    <div class="footer-container text-white p-4 d-flex justify-content-between">
+      <div class="footer-logo">
+        <h2>NextDev</h2>
+        <p>&lt;/&gt;</p>
+      </div>
+      <div class="footer-links">
+        <h3>Institucional:</h3>
+        <ul>
+          <li><a href="#" class="text-white">Inicio</a></li>
+          <li><a href="#" class="text-white">Nossos Serviços</a></li>
+          <li><a href="#" class="text-white">Equipe</a></li>
+          <li><a href="#" class="text-white">Depoimentos</a></li>
+          <li><a href="#" class="text-white">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Redes Sociais:</h3>
+        <p>
+          <img src="logoinstagram.jpg" alt="Instagram" class="icon">
+          @nexdev
+        </p>
+        <p>
+          <img src="logofacebook.jpg" alt="Facebook" class="icon">
+          facebook.com/nexdev
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

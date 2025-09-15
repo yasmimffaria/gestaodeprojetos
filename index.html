@@ -20,6 +20,12 @@
     height: 60px;
   }
 
+  .py-5 {
+    padding-top: 5rem !important;
+    padding-bottom: rem !important;
+    padding-right: 6rem !important;
+  }
+
   .carousel-control-prev-icon {
     background: url("img/SETA.png") no-repeat center;
     background-size: contain;
@@ -30,6 +36,34 @@
     background: url("img/SETA.png") no-repeat center;
     background-size: contain;
     transform: rotate(180deg);
+  }
+
+  .container-section {
+    padding: 3rem 1rem;
+  }
+
+  .btn-custom {
+    background-color: #8b5cf6;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-custom:hover {
+    transform: scale(1.05);
+    background-color: #d63384;
+    color: white;
+
+  }
+
+  @media (max-width: 767px) {
+    .text-center-mobile {
+      text-align: center;
+    }
   }
 </style>
 
@@ -62,7 +96,56 @@
       </div>
     </div>
   </nav>
+  <section class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center-mobile py-5">
+        <h3>
+          Clique no vídeo ao lado<br>para conhecer
+        </h3>
+        <button class="btn btn-custom">
+          Conheça nosso serviços!
+        </button>
+      </div>
+      <div
+        style="padding-bottom: 150px;background-repeat: no-repeat;background-image: url(../gestaodeprojetos/img/Cópia_de_New_Products_and_Services_Business_Website_in_Violet_Dark_Blue_Neon_Pink_Gradient_Tech_Style__1_-removebg-preview.png);"
+        class="col-md-6 d-flex justify-content-center mt-4 mt-md-0">
 
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/044/249/288/small_2x/front-side-photo-of-gray-laptop-without-background-template-for-mockup-png.png"
+          alt="Mulher em um laptop com vídeo" class="img-fluid py-5">
+      </div>
+    </div>
+  </section>
+  <section class="sobre-nos">
+    <div class="container">
+ <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="roxo">Sobre nós</h4>
+          <h3>Conheça alguns de nossos serviços</h3>
+        </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img src="pc.jpeg" alt="Foto cliente">
+        <h6 class="nome">Curso online</h6>
+        <p class="texto">Aprenda de forma prática e dinâmica com nossos cursos online, preparados para atender desde
+          iniciantes até profissionais que querem se aprofundar na área.</p>
+      </div>
+      <div class="card">
+        <img src="conf.jpeg" alt="Foto cliente">
+        <h6 class="nome">Projetos práticos</h6>
+        <p class="texto">Coloque a teoria em prática com projetos reais, desenvolvidos para reforçar o aprendizado e
+          preparar você para os desafios do mercado.</p>
+      </div>
+      <div class="card">
+        <img src="pdf.jpeg" alt="Foto cliente">
+        <h6 class="nome">Baixar conteúdo</h6>
+        <p class="texto">Tenha acesso ao material completo para estudar quando e onde quiser, com recursos que facilitam
+          a revisão e o entendimento do conteúdo.</p>
+      </div>
+
+    </div>
+  </section>
   <section id="sec-professor" class="mt-5">
     <div class="container">
       <div class="row">

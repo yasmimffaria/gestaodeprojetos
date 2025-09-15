@@ -10,9 +10,60 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <title>NEXT DEV</title>
 </head>
 <style>
+  :root {
+    --roxo: #515052;
+  }
+  .depoimentos img {
+  width: 70px;       
+  height: 70px;      
+  object-fit: cover;  
+  border-radius: 50%; 
+  margin: 0 auto;     
+  display: block;
+}
+
+  section.depoimentos {
+      padding-top: 5rem;
+  }
+  .service-card {
+    border: 2px solid var(--roxo);
+    border-radius: 1.5rem;
+    padding: 2rem 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .service-card .icon {
+    font-size: 3rem;
+    color: var(--roxo);
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    font-weight: 600;
+    color: var(--roxo);
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     background-image: none;
@@ -68,34 +119,36 @@
 </style>
 
 <body style="background-color: black;">
-  <nav class="navbar bg-dark navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">NEXT DEV&lt;/&gt;</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="d-flex justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Inicio |</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Nossos Serviços |</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#sec-professor">Equipe |</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Depoimentos |</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Contato</a>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand text-white">NEXT DEV&lt;/&gt;</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Corrigido aqui -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">Inicio |</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#servico">Nossos Serviços |</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#sec-professor">Equipe |</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#depoimentos">Depoimentos |</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#cursos">Contato</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
   <section class="container">
     <div class="row align-items-center">
       <div class="col-md-6 text-center-mobile py-5">
@@ -109,42 +162,56 @@
       <div
         style="padding-bottom: 150px;background-repeat: no-repeat;background-image: url(../gestaodeprojetos/img/Cópia_de_New_Products_and_Services_Business_Website_in_Violet_Dark_Blue_Neon_Pink_Gradient_Tech_Style__1_-removebg-preview.png);"
         class="col-md-6 d-flex justify-content-center mt-4 mt-md-0">
-
         <img
           src="https://static.vecteezy.com/system/resources/thumbnails/044/249/288/small_2x/front-side-photo-of-gray-laptop-without-background-template-for-mockup-png.png"
           alt="Mulher em um laptop com vídeo" class="img-fluid py-5">
       </div>
     </div>
   </section>
-  <section class="sobre-nos">
+  <section id="servico" class="sobre-nos">
     <div class="container">
- <div class="row">
+      <div class="row">
         <div class="col-12 text-center">
           <h4 class="roxo">Sobre nós</h4>
           <h3>Conheça alguns de nossos serviços</h3>
         </div>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <img src="pc.jpeg" alt="Foto cliente">
-        <h6 class="nome">Curso online</h6>
-        <p class="texto">Aprenda de forma prática e dinâmica com nossos cursos online, preparados para atender desde
-          iniciantes até profissionais que querem se aprofundar na área.</p>
-      </div>
-      <div class="card">
-        <img src="conf.jpeg" alt="Foto cliente">
-        <h6 class="nome">Projetos práticos</h6>
-        <p class="texto">Coloque a teoria em prática com projetos reais, desenvolvidos para reforçar o aprendizado e
-          preparar você para os desafios do mercado.</p>
-      </div>
-      <div class="card">
-        <img src="pdf.jpeg" alt="Foto cliente">
-        <h6 class="nome">Baixar conteúdo</h6>
-        <p class="texto">Tenha acesso ao material completo para estudar quando e onde quiser, com recursos que facilitam
-          a revisão e o entendimento do conteúdo.</p>
-      </div>
+        <div class="col-12 py-3">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="service-card">
+                <img src="../gestaodeprojetos/img/pc.jpeg" alt="">
+                <h5 class="card-title mt-3">Curso Online</h5>
+                <p class="card-text">
+                  Acesso a uma plataforma completa com aulas em vídeo, material de apoio e exercícios práticos. Aprenda
+                  no seu próprio ritmo, de qualquer lugar.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card">
+                <img src="../gestaodeprojetos/img/conf.jpeg" alt="">
 
-    </div>
+                <h5 class="card-title mt-3">Projetos Práticos</h5>
+                <p class="card-text">
+                  Coloque a mão na massa com projetos reais, desenvolvidos com a orientação de nossos instrutores.
+                  Construa um portfólio para o mercado de trabalho.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card">
+                <img src="../gestaodeprojetos/img/pdf.jpeg" alt="">
+                <h5 class="card-title mt-3">Baixar Conteúdo</h5>
+                <p class="card-text">
+                  Tenha acesso a um conteúdo exclusivo para download, como e-books, apostilas e guias de estudo, para
+                  aprofundar seu conhecimento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
   </section>
   <section id="sec-professor" class="mt-5">
     <div class="container">
@@ -204,6 +271,129 @@
       </div>
     </div>
   </section>
+<section id="depoimentos" class="depoimentos">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h4 class="roxo">Depoimentos</h4>
+        <h3>Aqui estão alguns depoimentos de alguns alunos</h3>
+      </div>
+      <div class="col-12 py-3">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="service-card">
+              <img src="../gestaodeprojetos/img/foto1.jpg" alt="">
+              <h5 class="card-title mt-3">Maria Souza</h5>
+              <p class="card-text">
+                "O curso online superou minhas expectativas! As aulas são claras e o suporte dos professores é incrível."
+              </p>
+                <div class="stars mb-2 text-warning">
+                ⭐⭐⭐⭐⭐
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <img src="../gestaodeprojetos/img/foto2.jpg" alt="">
+              <h5 class="card-title mt-3">Carlos Pereira</h5>
+              <p class="card-text">
+                "Os projetos práticos me ajudaram a aplicar o que aprendi. Hoje já tenho um portfólio para mostrar em entrevistas!"
+              </p>
+               <div class="stars mb-2 text-warning">
+                ⭐⭐⭐⭐⭐
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <img src="../gestaodeprojetos/img/foto3.jpg" alt="">
+              <h5 class="card-title mt-3">Fernanda Lima</h5>
+              <p class="card-text">
+                "O material para download é excelente, ajudou muito nos meus estudos e me sinto muito mais preparada."
+              </p>
+               <div class="stars mb-2 text-warning">
+                ⭐⭐⭐⭐⭐
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+ <section id="cursos" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+        <h3 class="roxo mb-3">Cursos</h3>
+        <div id="cursosCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex bg-dark text-white p-3 rounded align-items-center">
+                <img src="https://img.youtube.com/vi/KlIL63MeyMY/maxresdefault.jpg"
+                  class="img-fluid rounded me-3" style="max-width: 200px;" alt="Curso 1">
+                <div>
+                  <h5 class="fw-bold">Programação Orientada a Objeto</h5>
+                  <p class="text-secondary small">
+                    Aprenda os principais conceitos de POO em apenas 10 minutos!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex bg-dark text-white p-3 rounded align-items-center">
+                <img src="https://img.youtube.com/vi/Ofktsne-utM/maxresdefault.jpg"
+                  class="img-fluid rounded me-3" style="max-width: 200px;" alt="Curso 2">
+                <div>
+                  <h5 class="fw-bold">Introdução a Banco de Dados</h5>
+                  <p class="text-secondary small">
+                    Entenda os fundamentos de SQL e modelagem de dados para projetos reais.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex bg-dark text-white p-3 rounded align-items-center">
+                <img src="https://img.youtube.com/vi/Ke90Tje7VS0/hqdefault.jpg"
+                  class="img-fluid rounded me-3" style="max-width: 200px;" alt="Curso 3">
+                <div>
+                  <h5 class="fw-bold">React para Iniciantes</h5>
+                  <p class="text-secondary small">
+                    Comece a criar interfaces modernas e dinâmicas com React.js.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#cursosCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#cursosCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h4 class="fw-bold text-white">Se interessou?<br>Preencha o formulário</h4>
+        <form class="mt-3">
+          <div class="mb-3">
+            <input type="text" class="form-control rounded-pill" placeholder="Seu nome">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control rounded-pill" placeholder="Seu e-mail">
+          </div>
+          <button type="submit" class="btn w-100 rounded-pill"
+            style="background-color:#d63384; color:white; font-weight:600;">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
   <footer class="mt-5">
     <div class="footer-container text-white p-4 d-flex justify-content-between">
